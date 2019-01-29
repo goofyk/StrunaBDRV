@@ -1,0 +1,26 @@
+log: "sysdba"
+pas: "#ld8Dat!"
+
+
+gsec -user sysdba -password masterkey -database "localhost:C:\Program Files (x86)\Firebird\Firebird_2_5\security2.fdb"
+modify sysdba -pw pwd
+
+grant all to user sysdba;
+
+connect "localhost:C:\Program Files (x86)\Firebird\Firebird_2_5\security2.fdb" user sysdba password 'masterkey'
+
+##CHANGE PASSWORD
+
+gsec -database "localhost:C:\Program Files (x86)\Firebird\Firebird_2_5\security2.fdb" -user sysdba -pass password;
+
+-database "localhost:C:\Program Files (x86)\Firebird\Firebird_2_5\security2.fdb" -mo sysdba -pw newpassword -user sysdba -pass masterkey;
+
+##ADD NEW USER
+
+gsec -database "localhost:C:\Program Files (x86)\Firebird\Firebird_2_5\security2.fdb" -user sysdba -pass password;
+
+add strunabdrv -newuser -fname StrunaBDRV -lname Service -admin yes;
+
+add strunabdrv -pw newpassword -fname Struna-BDRV -admin yes;
+
+delete newadmin;

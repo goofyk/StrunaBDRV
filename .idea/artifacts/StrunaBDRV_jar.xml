@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="StrunaBDRV:jar">
+    <output-path>$PROJECT_DIR$</output-path>
+    <root id="archive" name="StrunaBDRV.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/java/MF/Main/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="JStrunaBDRV" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/mylibs/sqlite-jdbc-3.16.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/mylibs/mssql-jdbc-7.0.0.jre8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/mylibs/h2-1.4.197.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/mylibs/jaybird-full-3.0.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/mylibs/log4j-1.2.17.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
