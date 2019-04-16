@@ -19,7 +19,7 @@ public class UCommon {
     static String javaHome = System.getProperty("java.home");
     static String sysdir = System.getenv("WINDIR");
     static Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-    start String test2;
+    start String test3;
     
     static String md5(String st) {
         MessageDigest messageDigest = null;
